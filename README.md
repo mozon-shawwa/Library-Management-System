@@ -158,4 +158,5 @@ Clicking any statistic opens a detailed table with:
 ---
 
 ## 🎥 Project Demo
-[![Watch the demo](https://img.youtube.com/vi/-ezj81EHYic/0.jpg)](https://www.youtube.com/watch?v=-ezj81EHYic)
+📺 [Watch the demo video on YouTube](https://www.youtube.com/watch?v=-ezj81EHYic)
+
