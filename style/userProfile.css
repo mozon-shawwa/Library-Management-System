@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.AnchorPaneColorAdmin{
+    -fx-background-color: #10577c ;
+}
+.AnchorPaneColorUser{
+        -fx-background-color: #11885c ;
+}
+.AnchorPaneColorLibriran{
+        -fx-background-color: #810a5f ;
+}

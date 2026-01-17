@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="370.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <stylesheets>
+        <URL value="@/style/login.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #10577c;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+         <children>
+            <Label layoutX="51.0" layoutY="177.0" prefHeight="18.0" prefWidth="133.0" text="UserName:" textFill="#fff7f7">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="256.0" prefHeight="18.0" prefWidth="133.0" text="Password:" textFill="#fff7f7">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="UserNameTf" layoutX="51.0" layoutY="204.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter userName" />
+            <TextField fx:id="passwordTf" layoutX="54.0" layoutY="283.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter Password" />
+            <Button layoutX="68.0" layoutY="352.0" mnemonicParsing="false" onAction="#LoginUser" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: #10577c; -fx-border-width: 4; -fx-border-color: white; -fx-border-radius: 15;" text="Login" textFill="WHITE" />
+            <Button layoutX="209.0" layoutY="351.0" mnemonicParsing="false" onAction="#ShowRegisterPage" prefHeight="42.0" prefWidth="100.0" style="-fx-background-color: #10577c; -fx-border-color: white; -fx-border-width: 4; -fx-border-radius: 15;" text="Register" textFill="#fffcfc" />
+            <ImageView fx:id="LoginImageView" fitHeight="138.0" fitWidth="177.0" layoutX="108.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user.jpeg" />
+               </image>
+            </ImageView>
+            <Label fx:id="UserNameLabelError" alignment="CENTER" layoutX="49.0" layoutY="231.0" prefHeight="26.0" prefWidth="270.0" textFill="#c43d3d">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordLabelError" alignment="CENTER" layoutX="51.0" layoutY="309.0" prefHeight="26.0" prefWidth="270.0" textFill="#c43b3b">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
